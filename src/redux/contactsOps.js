@@ -1,9 +1,9 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://67434464b7464b1c2a643469.mockapi.io"; // Замініть на реальний бекенд API
+axios.defaults.baseURL = "https://67434464b7464b1c2a643469.mockapi.io"; 
 
-// Отримання всіх контактів
+
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchContacts",
   async (_, thunkAPI) => {
@@ -16,7 +16,7 @@ export const fetchContacts = createAsyncThunk(
   }
 );
 
-// Додавання нового контакту
+
 export const addContact = createAsyncThunk(
   "contacts/addContact",
   async (contact, thunkAPI) => {
@@ -29,7 +29,6 @@ export const addContact = createAsyncThunk(
   }
 );
 
-// Видалення контакту
 export const deleteContact = createAsyncThunk(
   "contacts/deleteContact",
   async (id, thunkAPI) => {
