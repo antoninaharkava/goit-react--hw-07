@@ -1,0 +1,15 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .contactName {
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .contactNumber {
+    color: #555555;
+  }
